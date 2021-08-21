@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="container my-4">
+      <!-- image section  -->
+      <section class="d-flex">
+        <section class="mt-2">
+          <div class="w-100">
+            <img class="w-100" src="images/mac.png" alt="" />
+          </div>
+        </section>
+        <!-- details section  -->
+        <section class="d-flex flex-column ms-5">
+          <div class="w-100">
+            <div class="description">
+              <h1>Customize your Blue-24-inch imac with apple M1 chip.</h1>
+              <p>
+                Apple m1 chip with 8-core CPU with 4 performance cores and 4
+                efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB
+                unified memory 256GB SSD storage two thunderbolt / USB 4 ports
+                Magic Mouse Magic Keyboard - US English.
+              </p>
+            </div>
+          </div>
+
+          <!-- memory section  -->
+          <div class="my-3">
+            <h5 class="fw-bold">Memory</h5>
+            <button id="m1-btn" class="btn btn-outline-dark">
+              8GB unified memory
+            </button>
+            <button id="m2-btn" class="btn btn-outline-dark ms-2">
+              16GB unified memory
+            </button>
+          </div>
+          <!-- storage section  -->
+          <div class="my-3">
+            <h5 class="fw-bold">Storage</h5>
+            <button id="storage1-btn" class="btn btn-outline-dark">
+              256GB SSD Storage
+            </button>
+            <button id="storage2-btn" class="btn btn-outline-dark ms-2">
+              512GB SSD Storage
+            </button>
+            <button id="storage3-btn" class="btn btn-outline-dark ms-2">
+              1TB SSD Storage
+            </button>
+          </div>
+          <!-- Shipping section  -->
+          <div class="my-3">
+            <h5 class="fw-bold">Choose your delivery option</h5>
+            <button id="free" class="btn btn-outline-dark">
+              Friday, Aug 25 Free prime delivery
+            </button>
+            <button id="prime" class="btn btn-outline-dark ms-2">
+              Friday, Aug 21 delivery Charge 20$
+            </button>
+          </div>
+          <!-- price section -->
+          <div class="my-4">
+            <table class="table w-75">
+              <tbody>
+                <tr>
+                  <td class="fw-bold">Best Price</td>
+                  <td class="fw-bold">$<span id="best-price">1500</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Extra Memory Cost</td>
+                  <td class="fw-bold">$<span id="memory-cost">0</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Extra Storage Cost</td>
+                  <td class="fw-bold">$<span id="storage-cost">0</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Delivery Charge</td>
+                  <td class="fw-bold">$<span id="delivery-cost">0</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Total Price</td>
+                  <td class="fw-bold">$<span id="total">1500</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- cupon code part  -->
+          <div class="my-5">
+            <p class="mb-0 fw-bold">Add Promo Code</p>
+            <div class="input-group mb-3 w-75">
+              <input type="text" class="form-control" id="input-copon" />
+              <button class="btn btn-outline-danger" type="button" id="apply">
+                Apply
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <footer>
+        <hr />
+        <h1 class="text-center">Total: $ <span id="coponTotal">1500</span></h1>
+      </footer>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
